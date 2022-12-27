@@ -1,0 +1,39 @@
+{
+  "name": "discord.js-v14-template-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./dist/index.js",
+    "dev": "nodemon ./src/index.ts",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luhdo/discord-security-bot-typescript.git"
+  },
+  "keywords": [
+    "typescript",
+    "discord.js",
+    "v14",
+    "event-handler",
+    "template"
+  ],
+  "author": "Ludho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Luhdo/discord-security-bot-typescript/issues"
+  },
+  "homepage": "https://github.com/Luhdo/discord-security-bot-typescript#readme",
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  }
+}

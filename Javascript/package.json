@@ -1,0 +1,36 @@
+{
+  "name": "discord.js-v14-template-javascript",
+  "version": "0.0.0",
+  "description": "a template for discord.js v14 to kick start your projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luhdo/discord.js-v14-template.git"
+  },
+  "keywords": [
+    "discord.js",
+    "v14",
+    "event-handler",
+    "template",
+    "javascript"
+  ],
+  "author": "Ludho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Luhdo/discord.js-v14-template/issues"
+  },
+  "homepage": "https://github.com/Luhdo/discord.js-v14-template#readme",
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.20"
+  }
+}
