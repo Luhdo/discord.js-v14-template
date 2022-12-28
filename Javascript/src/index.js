@@ -34,7 +34,7 @@ client.buttons = new Collection();
 client.modals = new Collection();
 
 const events = fs
-  .readdirSync("./source/events")
+  .readdirSync("./src/source/events")
   .filter((file) => file.endsWith(".js"));
 
 events.forEach((event) => {
