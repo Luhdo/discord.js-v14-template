@@ -4,46 +4,27 @@ module.exports = {
   run: async (i) => {
     if (i.isChatInputCommand()) {
       const commandCheck = i.client.slash.get(i.commandName);
-
-      if (!commandCheck) {
-        return console.log(`Could not find slashCommand " '${i.commandName}'`);
-      } else {
-        await commandCheck.run(i);
-      }
+      await Run(commandCheck, i, "SlashCommand");
     } else if (i.isContextMenuCommand()) {
       const contextCheck = i.client.context.get(i.commandName);
-
-      if (!contextCheck) {
-        return console.log(
-          `Could not find ContextMenuCommand " '${i.commandName}'`
-        );
-      } else {
-        await contextCheck.run(i);
-      }
+      await Run(contextCheck, i, "ContextMenuCommand");
     } else if (i.isButton()) {
       const buttonCheck = i.client.buttons.get(i.customId);
-
-      if (!buttonCheck) {
-        return console.log(`Could not find Button " '${i.customId}'`);
-      } else {
-        await buttonCheck.run(i);
-      }
+      await Run(buttonCheck, i, "Button");
     } else if (i.isModalSubmit()) {
       const checkModal = i.client.modals.get(i.customId);
-
-      if (!checkModal) {
-        return console.log(`Could not find ModalSubmit " '${i.customId}'`);
-      } else {
-        await checkModal.run(i);
-      }
+      await Run(checkModal, i, "ModalSubmit");
     } else if (i.isAnySelectMenu()) {
       const checkMenu = i.client.menus.get(i.customId);
-
-      if (!checkMenu) {
-        return console.log(`Could not find SelectMenu " '${i.customId}'`);
-      } else {
-        await checkMenu.run(i);
-      }
+      await Run(checkMenu, i, "SelectMenu");
     }
   },
 };
+
+async function Run(interactionFile, i, type) {
+  interactionFile
+    ? await interactionFile.run(i)
+    : console.error(
+        `Could not find ${type} " '${i.customId || i.commandName}'`
+      );
+}
