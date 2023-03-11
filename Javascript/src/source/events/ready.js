@@ -9,6 +9,12 @@ const botLoader = ora("Starting Discord.js Client").start();
 module.exports = {
   event: "ready",
   oneTime: true,
+  /**
+   *
+   *
+   * @param {import("discord.js").Client} client
+   * @return {Promise<void>}
+   */
   run: async (client) => {
     botLoader.succeed(`${client.user.tag} Started`);
 

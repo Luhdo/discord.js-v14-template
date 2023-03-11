@@ -8,6 +8,12 @@ module.exports = {
   data: new SlashCommandBuilder()
     .setName("slash")
     .setDescription("slash-handler Test Command"),
+  /**
+   *
+   *
+   * @param {import("discord.js").CommandInteraction} interaction
+   * @return {Promise<void>}
+   */
   run: async (interaction) => {
     await interaction.reply({
       content: "you should star [this](https://github.com/Luhdo)",

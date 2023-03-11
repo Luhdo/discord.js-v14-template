@@ -1,6 +1,12 @@
 module.exports = {
   event: "interactionCreate",
   oneTime: false,
+  /**
+   *
+   *
+   * @param {import("discord.js").Integration} i
+   * @return {Promise<void>}
+   */
   run: async (i) => {
     if (i.isChatInputCommand()) {
       const commandCheck = i.client.slash.get(i.commandName);

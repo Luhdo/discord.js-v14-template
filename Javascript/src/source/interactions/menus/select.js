@@ -6,6 +6,12 @@ const {
 
 module.exports = {
   data: { name: "select" },
+  /**
+   *
+   *
+   * @param {import("discord.js").AnySelectMenuInteraction} interaction
+   * @return {Promise<void>}
+   */
   run: async (interaction) => {
     const value = interaction.values[0];
     await interaction.deferReply({ ephemeral: true });

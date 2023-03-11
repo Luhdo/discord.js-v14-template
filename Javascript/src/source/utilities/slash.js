@@ -4,6 +4,11 @@ const ora = require("ora");
 const config = require("../../config");
 
 module.exports = {
+  /**
+   *
+   * @param {string} clientId
+   * @param {any[]} commands
+   */
   register: async (clientId, commands) => {
     const Loader = ora("Registering slash commands");
 
