@@ -1,9 +1,16 @@
-
 # discord.js-v14-template
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-A template for Discord.js v14 to kickstart your projects. It provides a foundation for building Discord bots and includes event handling, command handling, IntelliSense, and useful comments for beginners.
+discord.js-v14-template is a comprehensive template designed to jumpstart your Discord bot development using Discord.js version 14. It provides a solid foundation and a structured approach for building powerful and scalable bots for the Discord platform.
+
+## Features
+
+- **Event Handler:** The template includes a robust event handling system that allows you to easily listen and respond to various Discord events, such as message creation, guild member updates, and more.
+- **Command Handler:** With the built-in command handling system, you can effortlessly define and manage your bot's commands. The template supports command aliases, permissions, and arguments, making it flexible for a wide range of bot functionalities.
+- **Interactions Handler:** It also includes support for Discord's interactions, enabling you to create and handle slash commands and other interaction types introduced in Discord.js v14.
+- **IntelliSense and Documentation:** The template is carefully documented with helpful comments, making it beginner-friendly and providing IntelliSense support in editors such as VS Code. This enables developers to navigate the codebase easily and access auto-completion suggestions.
+- **Easy Setup and Configuration:** Getting started is hassle-free with a straightforward installation process. The template comes with clear instructions and a well-organized project structure that helps you focus on writing bot logic without worrying about the setup.
 
 ## Installation
 
@@ -12,7 +19,7 @@ To use this template, follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/Luhdo/discord.js-v14-template.git
+git clone https://github.com/your-username/discord.js-v14-template.git
 ```
 
 2. Install the required packages:
@@ -41,11 +48,11 @@ npm run build
 
 ## Usage
 
-This template provides a structured approach for handling events and commands in Discord.js v14. You can start by adding your code within the respective handlers located in the `src` directory. The template includes examples and comments to guide you through the process.
+This template serves as a starting point for developing your Discord bot using Discord.js v14. You can begin by implementing your bot's specific functionalities within the provided event handlers and command handlers located in the `src` directory. The template's code includes comments and examples to guide you through the process, making it easier to understand and extend according to your bot's needs.
 
 ## Contribution
 
-Contributions from other developers are welcome! If you'd like to contribute to this project, please follow these steps:
+Contributions from other developers are highly encouraged! If you'd like to contribute to this project, please follow these steps:
 
 1. Fork the repository.
 2. Create a new branch for your feature or bug fix.
